@@ -1,0 +1,30 @@
+server.port: 9090
+
+spring:
+  profiles:
+    active: local
+
+# local 환경
+---
+spring:
+  profiles: local
+
+  datasource:
+    data: classpath:data-h2.sql # 시작할 때 실행시킬 script
+    generate-unique-name: false # H2 연동 시 기본 URL 값을 Random 생성이 아니라 testdb로 고정하기 위해 추가
+
+  h2:
+    console:
+      enabled: true
+    datasource:
+      url: jdbc:h2:mem:testdb
+
+  jpa:
+    show_sql: true
+    hibernate:
+      ddl-auto: create-drop
+    defer-datasource-initialization: true
+
+  # update application to remove the dependency cycle between beans(for handlebars)
+  main:
+    allow-circular-references: true
