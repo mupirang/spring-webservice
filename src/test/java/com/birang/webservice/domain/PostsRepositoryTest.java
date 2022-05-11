@@ -33,7 +33,7 @@ public class PostsRepositoryTest {
         postsRepository.deleteAll();
     }
 
-    @Test
+    /*@Test
     public void 게시글저장_불러오기() {
         //given
         postsRepository.save(Posts.builder()
@@ -49,7 +49,7 @@ public class PostsRepositoryTest {
         Posts posts = postsList.get(0);
         assertThat(posts.getTitle(), is("테스트 게시글"));
         assertThat(posts.getContent(), is("테스트 본문"));
-    }
+    }*/
 
     @Test
     public void BaseTimeEntity_등록() {
