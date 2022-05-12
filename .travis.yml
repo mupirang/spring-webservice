@@ -47,7 +47,7 @@ deploy:
       region: ap-northeast-2
       wait-until-deployed: true
       on:
-        repo: mupirang/spring-webservice #Github 주소
+        repo: mupirang/spring-webservice # Github 주소
         branch: master
 
 # CI 실행 완료시 메일로 알람
