@@ -17,10 +17,10 @@ cache:
 
 script: "./gradlew clean build"
 
-#before_deploy:
-#  - zip -r spring-webservice *
-#  - mkdir -p deploy
-#  - mv spring-webservice.zip deploy/spring-webservice.zip
+before_deploy:
+  - zip -r spring-webservice *
+  - mkdir -p deploy
+  - mv spring-webservice.zip deploy/spring-webservice.zip
 
 deploy:
   - provider: s3
@@ -35,6 +35,7 @@ deploy:
     on:
       repo: mupirang/spring-webservice # Github 주소
       branch: master
+
 
 
 # CI 실행 완료시 메일로 알람
