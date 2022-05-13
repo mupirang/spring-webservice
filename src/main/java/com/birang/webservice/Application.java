@@ -14,13 +14,13 @@ public class Application {
 			+ "/app/config/spring-webservice/real-application.yml"; //EC2 경로(업데이트)
 			//+ "/Users/hjlee/app/config/spring-webservice/real-application.yml"; //로컬 경로
 
-	/*public static void main(String[] args) {
+	public static void main(String[] args) {
 		new SpringApplicationBuilder(Application.class)
 				.properties(APPLICATION_LOCATIONS)
 				.run(args);
-	}*/
-
-	public static void main(String[] args) {
-		SpringApplication.run(Application.class, args);
 	}
+
+	/*public static void main(String[] args) {
+		SpringApplication.run(Application.class, args);
+	}*/
 }
