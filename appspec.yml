@@ -13,7 +13,7 @@ permissions:
 
 hooks:
   ApplicationStart:
-    - location: /home/ec2-user/app/travis/deploy.sh
+    - location: execute-deploy.sh
       timeout: 120
       runas: ec2-user
 
