@@ -11,7 +11,7 @@ public class Application {
 
 	public static final String APPLICATION_LOCATIONS = "spring.config.location="
 			+ "classpath:application.yml,"
-			+ "/app/config/spring-webservice/real-application.yml"; //EC2 경로
+			+ "/home/ec2-user/app/config/spring-webservice/real-application.yml"; //EC2 경로
 			//+ "/Users/hjlee/app/config/spring-webservice/real-application.yml"; //로컬 경로
 
 	public static void main(String[] args) {
