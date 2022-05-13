@@ -1,13 +1,11 @@
 version: 0.0
 os: linux
 files:
-  - source: /
+  - source:  /
     destination: /home/ec2-user/app/travis/build/
-    overwrite: yes
 
 hooks:
-  AfterInstall:
-    - location: /home/ec2-user/app/travis/deploy.sh
-      timeout: 120
-      runas: ec2-user
+  AfterInstall: # 배포가 끝나면 아래 명령어를 실행
+    - location: build/execute-deploy.sh
+      timeout: 180
 
