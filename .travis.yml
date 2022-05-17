@@ -4,7 +4,7 @@ jdk:
 
 branches:
   only:
-    - masters #사용 중인 branch
+    - master #사용 중인 branch
 
 before_install:
   - chmod +x gradlew
